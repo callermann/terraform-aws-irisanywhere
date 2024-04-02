@@ -103,6 +103,13 @@ variable "disk_os_type" {
   default     = "gp3"
 }
 
+variable "deployment_name" {
+  type        = string
+  description = "(Optional) Custom name for deployment, overrides default use of instance type naming"
+  default     = ""
+
+}
+
 variable "hostname_prefix" {
   type        = string
   description = "(Required) A unique name."
